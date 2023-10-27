@@ -29,7 +29,7 @@ BigBuckBunny en format MP2:
 ## Exercici 2: Redimensionar i reduir la qualitat d'imatges
 El propòsit d'aquest exercici és crear una funció que modifiqui la resolució d'un vídeo utilitzant FFmpeg. He creat la funció **modificar_resolucio**, on els paràmetres d'entrada són el path del vídeo d'entrada, el path del vídeo de sortida i la nova resolució. Aquesta funció utilitza la comanda FFpmeg **ffmpeg -i "{video_entrada}" -vf "scale={resolucio}" -c:a copy "{video_sortida}** , on -i vídeo_entrada especifica el video d'entrada, -vf scale=resolucio especifica un filtre de vídeo que canviarà la resolució del vídeo a la nova resolució indicada, -c:a copy manté la pista d'àudio del fitxer d'entrada sense canvis i la copia al fitxer de sortida.
 
-Dins de la funció **main** es verifica si es selecciona adequadament aquest exercici. Primer de tot, definim la nova resolució (640:480) i el path del vídeo de sortida. Per últim, cridem a la funció **modificar_resolució**.
+Dins de la funció **main** es verifica si es selecciona adequadament aquest exercici. Primer de tot, definim la nova resolució (640:480) i el path del vídeo de sortida. Per últim, crido a la funció **modificar_resolució**.
 
 
 ```python
@@ -38,9 +38,10 @@ python3 P2-CarmeCorbi.py 2
 ```
 **Resultat de l'exercici 2:**
 Vídeo entrada:
-![]()
+![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/resolucio_video_entrada.png)
 
 Vídeo sortida:
+![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/resolucio_video_sortida.png)
 
 ## Exercici 3: Llegir bytes d'una imatge amb patró serpentina
 El proposit d'aquest exercici és crear una funció que modifiqui el cromasubmostreig s'un vídeo utilitzant FFmeg.
