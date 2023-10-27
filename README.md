@@ -21,6 +21,7 @@ Fitxer infofitxer.txt:
 ![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/infofitxer.txt.png)
 
 BigBuckBunny en format MP2:
+
 ![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/resultat_exercici1.png)
 
 
