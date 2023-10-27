@@ -1,5 +1,6 @@
 # Sistemes de Codificació d'Àudio i Video: Pràctica 2
 **Instruccions per executar el fitxer**
+
 Executeu el fitxer `P2-CarmeCorbi.py` especificant el número d'exercici com a argument. Per exemple, per executar l'Exercici 1, utilitzeu la següent comanda:
    ```python
    python3 P2-CarmeCorbi.py 1
