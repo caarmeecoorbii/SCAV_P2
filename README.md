@@ -1,14 +1,14 @@
 # Sistemes de Codificació d'Àudio i Video: Pràctica 2
 **Instruccions per executar el fitxer**
-1. Executeu el fitxer `P2-CarmeCorbi.py` especificant el número d'exercici com a argument. Per exemple, per executar l'Exercici 1, utilitzeu la següent comanda:
+Executeu el fitxer `P2-CarmeCorbi.py` especificant el número d'exercici com a argument. Per exemple, per executar l'Exercici 1, utilitzeu la següent comanda:
    ```python
    python3 P2-CarmeCorbi.py 1
 
 ## Exercici 1: Passar de MP4 a MP2 i guardar la informació
 El propòsit d'aquest exercici implica la conversió d'un vídeo del format MP4 al format MP2 i guardar la informació del vídeo en un fitxer d'informació.
+Dins de la funció **main** es verifica si es selecciona adequadament aquest exercici. Primer de tot, es defineix el video d'entrada que en el meu cas és el BigBuckBunny i també es defineix el nom del video de sortida. També es declara el nom del fitxer de text on es guardarà la informació.
 
-
-
+Seguidament, s'utilitza la comanda FFmeg **ffmpeg -i {video_entrada} -c:v mpeg2video -c:a mp2 {video_sortida}**, on -i video_entrada especifica el vídeo d'entrada, -c:v mpeg2video especifica el codec de vídeo que s'utilitzarà per a la sortida (s'utilitza el códec de vídeo MPEG-2), -c:a mp2 especifica el codec d'àudio que s'utilitzarà en la sortida (s'utilitza el còdec d'àudio MP2). Finalment, es crida a la funció info. He creat la funció **info** que utilitza ffmpeg per extreure l'informació d'un fitxer de vídeo i guarda aquesta informació en un arxiu de text.
 
 ```python
 # Executa l'exercici 1
