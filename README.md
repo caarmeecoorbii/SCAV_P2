@@ -10,7 +10,7 @@ Executeu el fitxer `P2-CarmeCorbi.py` especificant el número d'exercici com a a
 El propòsit d'aquest exercici implica la conversió d'un vídeo del format MP4 al format MP2 i guardar la informació del vídeo en un fitxer d'informació.
 Dins de la funció **main** es verifica si es selecciona adequadament aquest exercici. Primer de tot, es defineix el vídeo d'entrada que en el meu cas és el BigBuckBunny i també es defineix el nom del vídeo de sortida. També es declara el nom del fitxer de text on es guardarà la informació.
 
-Seguidament, s'utilitza la comanda FFmeg **ffmpeg -i {video_entrada} -c:v mpeg2video -c:a mp2 {video_sortida}**, on -i video_entrada especifica el vídeo d'entrada, -c:v mpeg2video especifica el codec de vídeo que s'utilitzarà per a la sortida (s'utilitza el códec de vídeo MPEG-2), -c:a mp2 especifica el codec d'àudio que s'utilitzarà en la sortida (s'utilitza el còdec d'àudio MP2). Finalment, es crida a la funció info. He creat la funció **info** que utilitza ffmpeg per extreure la informació d'un fitxer de vídeo i guarda aquesta informació en un arxiu de text.
+Seguidament, s'utilitza la comanda FFpmeg **ffmpeg -i {video_entrada} -c:v mpeg2video -c:a mp2 {video_sortida}**, on -i video_entrada especifica el vídeo d'entrada, -c:v mpeg2video especifica el codec de vídeo que s'utilitzarà per a la sortida (s'utilitza el códec de vídeo MPEG-2), -c:a mp2 especifica el codec d'àudio que s'utilitzarà en la sortida (s'utilitza el còdec d'àudio MP2). Finalment, es crida a la funció info. He creat la funció **info** que utilitza ffmpeg per extreure la informació d'un fitxer de vídeo i guarda aquesta informació en un arxiu de text.
 
 ```python
 # Executa l'exercici 1
@@ -27,7 +27,9 @@ BigBuckBunny en format MP2:
 
 
 ## Exercici 2: Redimensionar i reduir la qualitat d'imatges
-El propòsit d'aquest exercici és crear una funció que modifiqui la resolució d'un vídeo utilitzant FFmpeg.
+El propòsit d'aquest exercici és crear una funció que modifiqui la resolució d'un vídeo utilitzant FFmpeg. He creat la funció **modificar_resolucio**, on els paràmetres d'entrada són el path del vídeo d'entrada, el path del vídeo de sortida i la nova resolució. Aquesta funció utilitza la comanda FFpmeg **ffmpeg -i "{video_entrada}" -vf "scale={resolucio}" -c:a copy "{video_sortida}** , on -i vídeo_entrada especifica el video d'entrada, -vf scale=resolucio especifica un filtre de vídeo que canviarà la resolució del vídeo a la nova resolució indicada, -c:a copy manté la pista d'àudio del fitxer d'entrada sense canvis i la copia al fitxer de sortida.
+
+Dins de la funció **main** es verifica si es selecciona adequadament aquest exercici. Primer de tot, definim la nova resolució (640:480) i el path del vídeo de sortida. Per últim, cridem a la funció **modificar_resolució**.
 
 
 ```python
@@ -35,8 +37,10 @@ El propòsit d'aquest exercici és crear una funció que modifiqui la resolució
 python3 P2-CarmeCorbi.py 2
 ```
 **Resultat de l'exercici 2:**
-
+Vídeo entrada:
 ![]()
+
+Vídeo sortida:
 
 ## Exercici 3: Llegir bytes d'una imatge amb patró serpentina
 El proposit d'aquest exercici és crear una funció que modifiqui el cromasubmostreig s'un vídeo utilitzant FFmeg.
