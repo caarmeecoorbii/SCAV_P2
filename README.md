@@ -37,10 +37,13 @@ Dins de la funció **main** es verifica si es selecciona adequadament aquest exe
 python3 P2-CarmeCorbi.py 2
 ```
 **Resultat de l'exercici 2:**
+
 Vídeo entrada:
+
 ![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/resolucio_video_entrada.png)
 
 Vídeo sortida:
+
 ![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/resolucio_video_sortida.png)
 
 ## Exercici 3: Llegir bytes d'una imatge amb patró serpentina
