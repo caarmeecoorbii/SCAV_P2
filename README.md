@@ -3,7 +3,7 @@
 Executeu el fitxer `P2-CarmeCorbi.py` especificant el número d'exercici com a argument. Per exemple, per executar l'Exercici 1, utilitzeu la següent comanda:
    ```python
    python3 P2-CarmeCorbi.py 1
-   	```
+   ```
 
 ## Exercici 1: Passar de MP4 a MP2 i guardar la informació
 El propòsit d'aquest exercici implica la conversió d'un vídeo del format MP4 al format MP2 i guardar la informació del vídeo en un fitxer d'informació.
