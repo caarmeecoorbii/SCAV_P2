@@ -16,8 +16,9 @@ Seguidament, s'utilitza la comanda FFmeg **ffmpeg -i {video_entrada} -c:v mpeg2v
 python3 P2-CarmeCorbi.py 1
 ```
 **Resultat de l'exercici 1:**
-
-![]()
+infofitxer.txt
+![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/infofitxer.txt.png)
+![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/resultat_exercici1.png)
 
 
 ## Exercici 2: Redimensionar i reduir la qualitat d'imatges
