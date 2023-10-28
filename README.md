@@ -71,8 +71,9 @@ Subsmotreig de croma després d'aplicar l'exercici 3:
 
 
 ## Exercici 4: Imprimir aspectes rellevants del vídeo
-El proposit d'aquest exercici és crear una funció per obtenir almenys 5 caràcteristiques d'un vídeo i imprimir-les per pantalla.
+El proposit d'aquest exercici és crear una funció per obtenir almenys 5 caràcteristiques d'un vídeo i imprimir-les per pantalla. He creat una funció **obtenir_info_video** on el paràmetre d'entrada és el path del vídeo d'entrada. Aquesta funció utilitza una comanda FFmpeg per analitzar l'arxiu de vídeo **'ffprobe', '-v', 'error','-select_streams', 'v:0','-show_entries', 'stream= codec_type,width,height,pix_fmt,sample_aspect_ratio,chroma_location,duration,bit_rate,color_range,color_space','-of', 'default=noprint_wrappers=1', video_entrada** on -show_entries especifica la informació que vull obtindre del vídeo. En aquest cas, he sel·lecionat el tipus de còdec, dimensions del vídeo, format de píxels, duració, relació d'aaspecte, la ubicació del croma, la taxa de bits, el rang de colors i l'espai de colors. Per últim, s'imprimeixen les caràcterístiques per pantalla.
 
+Dins de la funció **main** es verifica si es selecciona adequadament aquest exercici. Seguidament, es crida a la funció **obtenir_info_video**.
 
 
 ```python
