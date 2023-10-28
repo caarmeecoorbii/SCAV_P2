@@ -96,5 +96,5 @@ python3 P2-CarmeCorbi.py 5
 ```
 **Resultat de l'exercici 5:**
 
-![]()
+![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/resultat_exercici5.png)
 
