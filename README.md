@@ -81,7 +81,7 @@ Dins de la funció **main** es verifica si es selecciona adequadament aquest exe
 python3 P2-CarmeCorbi.py 4
 ```
 **Resultat de l'exercici 4:**
-![]()
+![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/resultat_exercici4.png)
 
 ## Exercici 5: Integració del script de la pràctica 1
 El propòsit d'aquest exercici és aprendre com un script hereda funcionalitats d'un altre script.
