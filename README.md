@@ -59,7 +59,16 @@ Dins de la funció **main** es verifica si es selecciona adequadament aquest exe
 python3 P2-CarmeCorbi.py 3
 ```
 **Resultat de l'exercici 3:**
-![]()
+
+Submostreig de croma vídeo original:
+
+![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/cromasubmostreig_original.png)
+
+Subsmotreig de croma després d'aplicar l'exercici 3:
+
+![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/resultat_exercici3.png)
+
+
 
 ## Exercici 4: Imprimir aspectes rellevants del vídeo
 El proposit d'aquest exercici és crear una funció per obtenir almenys 5 caràcteristiques d'un vídeo i imprimir-les per pantalla.
