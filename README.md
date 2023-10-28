@@ -81,10 +81,13 @@ Dins de la funció **main** es verifica si es selecciona adequadament aquest exe
 python3 P2-CarmeCorbi.py 4
 ```
 **Resultat de l'exercici 4:**
+
 ![](https://github.com/caarmeecoorbii/SCAV_P2/blob/main/resultat_exercici4.png)
 
 ## Exercici 5: Integració del script de la pràctica 1
-El propòsit d'aquest exercici és aprendre com un script hereda funcionalitats d'un altre script.
+El propòsit d'aquest exercici és aprendre com un script hereda funcionalitats d'un altre script. El que he fet és a dalt de tot del script posar aquesta línia de codi **from rgb_yuv import rgb_to_yuv, yuv_to_rgb**, on estic important dues funcions del script **rgb_yuv.py** que és el fitxer de la primera pràctica.
+
+Dins de la funció **main** es verifica si es selecciona adequadament aquest exercici. Per últim, defineixo els paràmetres adequats i crido a les dues funcions **rgb_to_yuv** i **yuv_t_rgb**.
 
 
 ```python
